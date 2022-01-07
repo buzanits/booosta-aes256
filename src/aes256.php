@@ -3,7 +3,7 @@ namespace booosta\aes256;
 use \booosta\Framework as b;
 b::init_module('aes256');
 
-class AES256 extends \booosta\crypter\Crypter
+class aes256 extends \booosta\crypter\Crypter
 {
   use moduletrait_aes256;
 
