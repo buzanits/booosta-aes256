@@ -46,7 +46,7 @@ class aes256 extends \booosta\crypter\Crypter
   {
     if($this->key) return $this->key;
     if(is_readable($this->config('aes256_keyfile'))) include($this->config('aes256_keyfile'));
-    return $key;
+    return $key ?? $this->key;
   }
 
   protected function check_install($check_cipher = true)
